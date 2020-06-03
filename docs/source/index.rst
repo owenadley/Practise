@@ -30,9 +30,9 @@ Transitions
 
 Keryframes
 ==================
-.. Index
-.. ==================
+ Index
+ ==================
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+ * :ref:`genindex`
+ * :ref:`modindex`
+ * :ref:`search`
