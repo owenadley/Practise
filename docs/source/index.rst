@@ -2,21 +2,35 @@
 JavaScript
 ********************************
 
+Vanilla JS
+==================
+
+React
+==================
+
+D3JS
+==================
+
 ********************************
 CSS
 ********************************
 .. .. toctree::
 ..    :caption: Contents:
 
-
-CSS
-==================
 Flexbox
-------------------
-
-Index
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Transforms
+==================
+
+Transitions
+==================
+
+Keryframes
+==================
+.. Index
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
