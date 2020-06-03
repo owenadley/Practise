@@ -1,6 +1,6 @@
  .. toctree::
     :caption: Contents:
-    :max_depth: -1
+    :max_depth: 1
 
 
 
