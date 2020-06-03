@@ -1,13 +1,3 @@
-  .. toctree::
-     :caption: Contents:
-     :max_depth: 1
-
-     /pages/javascript.rst
-
-
-
-
-
 
 React
 ==================
@@ -28,8 +18,17 @@ Transforms
 Transitions
 ==================
 
-Keryframes
+Keyframes
 ==================
+
+
+  .. toctree::
+     :caption: Contents:
+     :max_depth: 1
+
+     /pages/javascript.rst
+
+
  Index
  ==================
 
