@@ -8,32 +8,47 @@ Arrays
 ------------------
 unshift(x)
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Adds a new item to the beginning of the array and return
-* Returns new array length
+Adds a new item to the beginning of the array and returns the new array length
 
 push(x)
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Adds a new item to the end of the array
-* Returns the new array length
+Adds a new item to the end of the array and returns the new array length
+
+join()
+^^^^^^^^^^^^^^^^^^^^^^^
+Returns all elements in an array as a single string
+
+.. code-block:: javascript
+    
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    var energy = fruits.join();
+    // energy == "Banana,Orange,Apple,Mango"
+
+The elements will be seperated by a specified seperator. By default this is a comma
+
+
+
 
 Strings
 ------------------
 split("")
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Split a string into an array based on each occurance of the passed parameter
+Split a string into an array based on each occurance of the passed parameter
+
 * Ex. "" would split each single char into its own index in the array
 
 parseInt("40")
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Parse a string and returns an integer
+Parse a string and returns an integer
 
 concat(str)
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Concats strings together
-* Ex.
+Concats strings together
 
-    * newStr = str1.concat(str2)
-    * newStr = str1.concat(str2, str3, strn)
+.. code-block:: javascript
+    
+    let newStr = str1.concat(str2)
+    let newStr = str1.concat(str2, str3, strn)
 
 
 
@@ -43,15 +58,15 @@ Variable Definitions
 -------------------------
 let
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Varibale which is accessible from within the scope that it is declared only
+Variable which is accessible from within the scope that it is declared only
 
 var 
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Variable decleration which is accessible globally or anywhere within the function
+Variable decleration which is accessible globally or anywhere within the function
 
 const
 ^^^^^^^^^^^^^^^^^^^^^^^
-* Variablde decleration for an immutable value
+Variable decleration for an immutable value
 
 
 
@@ -106,16 +121,16 @@ Redux State Management
 A popular state management library that keeps all state information in a central location called a 'store'.
 Redux models the applications state as a single JS Object
 
-* Action
+Action
     
     * A POJO that must have a key called 'type' and a string value
     * Can have any number of additional keys
 
-* Reducer
+Reducer
 
     * A function that accepts the state and an action and returns a new state
 
-* Store
+Store
 
     * One bug POJO that represents the entire state of the application
 
