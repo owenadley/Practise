@@ -26,8 +26,19 @@ Returns all elements in an array as a single string
 
 The elements will be seperated by a specified seperator. By default this is a comma
 
+every()
+^^^^^^^^^^^^^^^^^^^^^^^
+Tests whether all elements of an array pass the test implemented by the provided function. Returns boolean
 
+.. code-block:: javascript
+    
+    const isBelowThreshold = (currentValue) => currentValue < 40;
+    const array1 = [1, 30, 39, 29, 10, 13];
 
+    console.log(array1.every(isBelowThreshold));
+    // expected output: true
+
+The elements will be seperated by a specified seperator. By default this is a comma
 
 Strings
 ------------------
@@ -40,6 +51,15 @@ Split a string into an array based on each occurance of the passed parameter
 parseInt("40")
 ^^^^^^^^^^^^^^^^^^^^^^^
 Parse a string and returns an integer
+
+.. code-block:: javascript
+    
+    parseInt("40") // 40
+    parseInt("40 20 34") //40
+    parseInt("3.5") //3
+    parseInt("3.7") //3
+    parseInt("40 years") //40
+    parseInt("He is 40 years") //NaN
 
 concat(str)
 ^^^^^^^^^^^^^^^^^^^^^^^
