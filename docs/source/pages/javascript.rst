@@ -70,8 +70,6 @@ Concats strings together
     let newStr = str1.concat(str2)
     let newStr = str1.concat(str2, str3, strn)
 
-
-
 ES6+ (ECMAScript 6)
 ======================
 Variable Definitions
@@ -87,8 +85,6 @@ Variable decleration which is accessible globally or anywhere within the functio
 const
 ^^^^^^^^^^^^^^^^^^^^^^^
 Variable decleration for an immutable value
-
-
 
 React
 ==================
