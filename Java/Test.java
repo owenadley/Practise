@@ -26,7 +26,6 @@ public class Test {
         System.out.println((test.hashCode())%3);
 
 
-
         ht.put(2, "Slurp");
         ht.put(4, "Sprung");
         ht.put(6, "Adley");
@@ -74,7 +73,7 @@ public class Test {
     public static int[] bubbleSort(int[] arr) {
 
         // compare side by side numbers and swap so smaller number is on the left
-
+        // O(n^2)
         int n = arr.length; 
         for (int i=0; i<n-1; i++) {
             for (int j=0; j<n-1-i; j++) {
@@ -92,7 +91,7 @@ public class Test {
 
         // iterate through and find the smallest number. Take this number and move it to the left
         // SELECT the smallest number and put it in place
-
+        // O(n^2)
         int n = arr.length;
         int min, j;
 
@@ -116,14 +115,15 @@ public class Test {
         // iterate through and for each element move it to its correct location on the left (sorted) side.
         // move the elements that are on the left to the right if they are larger than the current number
         // INSERT the next number in its proper location in the sorted array to the left
+        // O(n^2)
 
         int n = arr.length;
         
-         for (int i=1; i<n; i++) {
+         for (int i=1; i<n; i++) {  //O(n)
             int temp = arr[i];
             int j = i-1;
 
-            while (j >= 0 && arr[j] > temp) {
+            while (j >= 0 && arr[j] > temp) {   //O(n)
                 arr[j + 1] = arr[ j ];
                 j = j - 1;
             }
@@ -135,13 +135,6 @@ public class Test {
 
     }
 
-    public static int[] quickSort(int[] arr) {
-        // pivot - all items to the left should be smaller and items to the right should be greater
-        int n = arr.length;
-
-        for (int i=0; i<n; i++) {
-            for (int j=)
-        }
-
-    } 
+ 
 }
+

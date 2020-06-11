@@ -7,18 +7,19 @@ public class SortFifty {
         }
     }
     public static int[] sortArray(int[] arr) {
-        int j = 0, temp;    //O(1)
-        for (int i=0; i<arr.length; i++) {  //O(n) , linear time
-            if (arr[i] > 50) {  //O(1)
-                if(i != j) {    //O(1)
-                    temp = arr[i];  //O(1)
-                    arr[i] = arr[j];    //O(1)
-                    arr[j] = temp;  //O(1)
-                }
-                j++;    //O(1)
+
+        int j=0, temp;
+
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i] > 50) {
+                if (i != j) {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }   
+                j++;
             }
         }
-        
         return arr;
     }
 }

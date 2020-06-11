@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Parenthesis {
     public static void main(String[] args) {
-        String str = "[()]{}{[()()]()}";
+        String str = "({)}";
         System.out.println(str);
         Boolean isBalanced = checkParenthesis(str);
         System.out.println(isBalanced);
