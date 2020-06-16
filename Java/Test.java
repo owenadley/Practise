@@ -95,7 +95,7 @@ public class Test {
         int n = arr.length;
         int min, j;
 
-        for (int i=0; i<n-1; i++) {
+         for (int i=0; i<n-1; i++) {
             min = i;
 
             for (j=i+1; j<n; j++) {
@@ -106,17 +106,16 @@ public class Test {
             int temp = arr[min];
             arr[min] = arr[i];
             arr[i] = temp;
-        }
+        } 
         return arr;
     }   
-
     public static int[] insertionSort(int[] arr) {
 
         // iterate through and for each element move it to its correct location on the left (sorted) side.
         // move the elements that are on the left to the right if they are larger than the current number
         // INSERT the next number in its proper location in the sorted array to the left
         // O(n^2)
-
+ 
         int n = arr.length;
         
          for (int i=1; i<n; i++) {  //O(n)
@@ -129,12 +128,11 @@ public class Test {
             }
             arr[j + 1] = temp;
         } 
+        return arr; 
 
 
-        return arr;
+
 
     }
-
- 
 }
 

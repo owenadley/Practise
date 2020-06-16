@@ -30,7 +30,7 @@ public class HashTable {
         return null;
     }
 
-    public void put(String key, int value) {
+    public void putput(String key, int value) {
 
         int index = key.hashCode() % 5;
         java.util.LinkedList<HTO> items = list[index];
@@ -61,9 +61,6 @@ public class HashTable {
         }
 
     }
-
-
-
 
 
 

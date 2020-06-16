@@ -24,20 +24,18 @@ public class BST {
     }
 
     public void insert(Node node, int value) {
-
         if (node.value > value) {
+            // insert left
             if (node.left != null) {
                 insert(node.left, value);
             } else {
                 node.left = new Node(value);
-                System.out.println("  Inserted " + value + " to left of " + node.value);            
             }
         } else {
             if (node.right != null) {
                 insert(node.right, value);
-            }  else {
+            } else {
                 node.right = new Node(value);
-                System.out.println("  Inserted " + value + " to right of " + node.value);            
             }
         }
     }
@@ -78,9 +76,9 @@ public class BST {
             return;
         }
 
-
         Queue<Node> q = new java.util.LinkedList<>();
         q.add(root);
+
         while (!q.isEmpty()) {
 
             Node node = q.remove();
@@ -92,8 +90,8 @@ public class BST {
             if (node.right != null) {
                 q.add(node.right);
             }
-
         }
+
 
     }
 

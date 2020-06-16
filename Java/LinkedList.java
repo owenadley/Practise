@@ -1,4 +1,4 @@
-public class LinkedList {
+ public class LinkedList {
     
     // LinkedList operations:
     // getSize()
@@ -27,6 +27,7 @@ public class LinkedList {
         this.size++;
         return newNode;
     }
+
     Node find(int value) {
         Node current = this.root;
 
@@ -138,4 +139,6 @@ public class LinkedList {
 
     }
 
-}
+} 
+
+
