@@ -1,0 +1,37 @@
+
+Chess Game
+============
+
+
+Board
+------
+-spot[][] board
+
+
+Piece
+------
+-isWhite
+-type
+-isKilled
+
+Spot
+------
+-int x
+-int y
+-piece
+
+Player
+-------
+-id
+
+Game
+-----
+-
+
+Move
+-----
+-start
+-end
+
+
+

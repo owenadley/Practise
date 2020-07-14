@@ -88,7 +88,20 @@ public class LinkedListThree {
             curr = curr.nextNode;
         }
         return false;
+    }
 
+    public static Node findMiddle() {
+
+        Node fp = root;
+        Node sp = root;
+
+        while (fp != null && fp.nextNode != null) {
+            fp = fp.nextNode.nextNode;
+            sp = sp.nextNode;
+        }
+
+        return sp;
+        
     }
 
     public void printList() {
@@ -110,9 +123,11 @@ public class LinkedListThree {
         //list.remove(10);
         //list.printList();
 
-        list.split(25);
+        //list.split(25);
         list.printList();
         System.out.println(list.hasCycle());
+        Node middle = findMiddle();
+        System.out.println(middle.value);
         
     }
 
